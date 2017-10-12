@@ -8,7 +8,7 @@ var mom = function(){
     }
 }
 
-    // this is the 'child' class
+// this is the 'child' class
 var soon = function(){
     var that = mom();
     var superSayHello = that.sayHello; // super?
