@@ -1,4 +1,3 @@
-
 // this is the 'parent' class
 var mom = function(){
     return {
@@ -9,14 +8,14 @@ var mom = function(){
 }
 
 // this is the 'child' class
-var soon = function(){
+var son = function(){
     var that = mom();
     var superSayHello = that.sayHello; // super?
     that.sayHello = function() {
-        return superSayHello("mom") + " and soon";
+        return superSayHello("mom") + " and son";
     }
     return that;
 }
 
-var soonInstance = soon();
-document.writeln(soonInstance.sayHello());
+var sonInstance = son();
+document.writeln(sonInstance.sayHello());
